@@ -1,0 +1,370 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12831,        362]
+NotebookOptionsPosition[     11532,        322]
+NotebookOutlinePosition[     11945,        338]
+CellTagsIndexPosition[     11902,        335]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\:041e\:0431\:044a\:0435\:043c \:043e\:0442\:043b\:0438\:0432\:043a\
+\:0438", "Section",
+ CellChangeTimes->{{3.68455509135392*^9, 3.684555093825572*^9}}],
+
+Cell["\:041d\:0430\:0439\:0434\:0435\:043c \:043e\:0431\:044a\:0435\:043c \
+\:043e\:0442\:043b\:0438\:0432\:043a\:0438, \:0441 \:0443\:0447\:0435\:0442\
+\:043e\:043c \:043b\:0438\:0442\:0435\:0439\:043d\:044b\:0445 \:0443\:043a\
+\:043b\:043e\:043d\:043e\:0432 \:0438 \:043f\:0440\:0438\:043f\:0443\:0441\
+\:043a\:043e\:0432:", "Text",
+ CellChangeTimes->{{3.6845548743949203`*^9, 3.68455490797136*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"V1", ":=", 
+   RowBox[{
+    FractionBox["1", "4"], " ", "\[Pi]", " ", "23", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"451", "+", "4"}], ")"}], "2"], "-", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"357", "-", "4"}], ")"}], "2"]}], ")"}]}]}], 
+  TraditionalForm]], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{{3.683183195567921*^9, 3.683183258565075*^9}, {
+   3.6831895078376274`*^9, 3.683189515344597*^9}, 3.683392493303956*^9, 
+   3.6845530557193127`*^9, {3.6845538003909063`*^9, 3.684553803260826*^9}, {
+   3.684553885756959*^9, 3.6845538947249517`*^9}, {3.684554765648241*^9, 
+   3.6845547692966795`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"V2", ":=", 
+   RowBox[{
+    FractionBox["1", "4"], " ", "\[Pi]", " ", 
+    RowBox[{"(", 
+     RowBox[{"75", "-", "59", "+", "7"}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["451", "2"], "-", 
+      SuperscriptBox["357", "2"]}], ")"}]}]}], TraditionalForm]], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{
+  3.683183253128474*^9, {3.683183285336802*^9, 3.6831832992099895`*^9}, {
+   3.683183353020877*^9, 3.6831833591459327`*^9}, 3.683183442213955*^9, {
+   3.6831895087392235`*^9, 3.683189514164817*^9}, 3.683392493303956*^9, 
+   3.6845530699548264`*^9, {3.684553771475581*^9, 3.68455377163669*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"V3", ":=", 
+   RowBox[{
+    FractionBox["1", "4"], " ", "\[Pi]", " ", 
+    RowBox[{"(", 
+     RowBox[{"59", "+", "4"}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["665", "2"], "-", 
+      SuperscriptBox["443", "2"]}], ")"}]}]}], TraditionalForm]], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{{3.6831833762022305`*^9, 3.6831833775141*^9}, {
+   3.683183439454126*^9, 3.683183473132433*^9}, {3.6831895095647683`*^9, 
+   3.6831895127288637`*^9}, 3.683392493303956*^9, 3.6845530774758544`*^9, {
+   3.6845537397593846`*^9, 3.6845537473134336`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"V4", ":=", 
+   RowBox[{
+    FractionBox["1", "4"], " ", "\[Pi]", " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"50", "-", "10"}], ")"}], "2"], " ", "75"}]}], 
+  TraditionalForm]], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{{3.6831834958722067`*^9, 3.683183512013898*^9}, {
+   3.6831895103873143`*^9, 3.6831895115831065`*^9}, {3.6833917482190604`*^9, 
+   3.6833917483861713`*^9}, 3.683392493303956*^9, 3.684553081831765*^9, {
+   3.68455383919284*^9, 3.6845538509567013`*^9}, {3.684554064134172*^9, 
+   3.6845540686992235`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"V5", ":=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", "4"], " ", "\[Pi]", " ", 
+     SuperscriptBox["443", "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{"59", "+", "4"}], ")"}]}], "-", 
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", "0", "59"], 
+     RowBox[{"\[Pi]", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["210", "2"], "-", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"y", "+", "23", "-", "4"}], ")"}], "2"]}], ")"}], 
+      RowBox[{"\[DifferentialD]", "y"}]}]}]}]}], TraditionalForm]], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{{3.6831821369683666`*^9, 3.6831822671015153`*^9}, {
+   3.6831828737302785`*^9, 3.6831829067141285`*^9}, {3.6831830017961073`*^9, 
+   3.6831830041266494`*^9}, 3.6831895051808643`*^9, {3.683189547006569*^9, 
+   3.6831895491900187`*^9}, {3.6833920929461927`*^9, 3.6833921225472116`*^9}, 
+   3.683392493304957*^9, {3.684553090635649*^9, 3.6845531226370363`*^9}, {
+   3.6845539495455885`*^9, 3.684553952848797*^9}, {3.684554001062019*^9, 
+   3.684554001102048*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"V6", ":=", 
+   RowBox[{
+    RowBox[{"\[Pi]", " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"210", "-", 
+        RowBox[{"(", 
+         RowBox[{"23", "-", "4"}], ")"}]}], ")"}], "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{"210", "-", 
+       FractionBox[
+        RowBox[{"210", "-", 
+         RowBox[{"(", 
+          RowBox[{"23", "-", "4"}], ")"}]}], "3"]}], ")"}]}], "-", 
+    RowBox[{"\[Pi]", " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"150", "-", 
+        RowBox[{"(", 
+         RowBox[{"23", "-", "4"}], ")"}]}], ")"}], "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{"150", "-", 
+       FractionBox[
+        RowBox[{"150", "-", 
+         RowBox[{"(", 
+          RowBox[{"23", "-", "4"}], ")"}]}], "3"]}], ")"}]}]}]}], 
+  TraditionalForm]], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{{3.683183005550592*^9, 3.6831830534702816`*^9}, {
+   3.683183086355851*^9, 3.6831830915612965`*^9}, {3.6831895031255064`*^9, 
+   3.6831895067769227`*^9}, 3.683392493304957*^9, {3.684553131407897*^9, 
+   3.6845531511671042`*^9}, {3.684554025043046*^9, 3.684554052764574*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"Vkon", ":=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", "12"], " ", 
+     RowBox[{"(", 
+      RowBox[{"\[Pi]", " ", 
+       RowBox[{"(", 
+        RowBox[{"59", "+", "4"}], ")"}]}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", 
+           RowBox[{"(", 
+            RowBox[{"59", "+", "4"}], ")"}], " ", 
+           RowBox[{"tan", "(", 
+            RowBox[{"1.", " ", "\[Degree]"}], ")"}]}], "+", "665"}], ")"}], 
+        "2"], "+", 
+       RowBox[{"665", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", 
+           RowBox[{"(", 
+            RowBox[{"59", "+", "4"}], ")"}], " ", 
+           RowBox[{"tan", "(", 
+            RowBox[{"1.", " ", "\[Degree]"}], ")"}]}], "+", "665"}], ")"}]}], 
+       "-", 
+       RowBox[{"2", " ", 
+        SuperscriptBox["665", "2"]}]}], ")"}]}], "+", 
+    RowBox[{
+     FractionBox["1", "12"], " ", 
+     RowBox[{"(", 
+      RowBox[{"\[Pi]", " ", "23"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", "23", " ", 
+           RowBox[{"tan", "(", 
+            RowBox[{"1.5", " ", "\[Degree]"}], ")"}]}], "+", "415"}], ")"}], 
+        "2"], "+", 
+       RowBox[{"415", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", "23", " ", 
+           RowBox[{"tan", "(", 
+            RowBox[{"1.5", " ", "\[Degree]"}], ")"}]}], "+", "415"}], ")"}]}],
+        "-", 
+       RowBox[{"2", " ", 
+        SuperscriptBox["415", "2"]}]}], ")"}]}], "+", 
+    RowBox[{
+     FractionBox["1", "12"], " ", 
+     RowBox[{"(", 
+      RowBox[{"\[Pi]", " ", 
+       RowBox[{"(", 
+        RowBox[{"75", "-", "59", "+", "7"}], ")"}]}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", 
+           RowBox[{"(", 
+            RowBox[{"75", "-", "59", "+", "7"}], ")"}], " ", 
+           RowBox[{"tan", "(", 
+            RowBox[{"1.5", " ", "\[Degree]"}], ")"}]}], "+", "578"}], ")"}], 
+        "2"], "+", 
+       RowBox[{"578", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", 
+           RowBox[{"(", 
+            RowBox[{"75", "-", "59", "+", "7"}], ")"}], " ", 
+           RowBox[{"tan", "(", 
+            RowBox[{"1.5", " ", "\[Degree]"}], ")"}]}], "+", "578"}], ")"}]}],
+        "-", 
+       RowBox[{"2", " ", 
+        SuperscriptBox["578", "2"]}]}], ")"}]}], "+", 
+    RowBox[{
+     FractionBox["1", "12"], " ", 
+     RowBox[{"(", 
+      RowBox[{"\[Pi]", " ", 
+       RowBox[{"(", 
+        RowBox[{"75", "-", "59", "+", "7"}], ")"}]}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"221.5", "-", 
+           RowBox[{"2", " ", 
+            RowBox[{"(", 
+             RowBox[{"75", "-", "59", "+", "7"}], ")"}], " ", 
+            RowBox[{"tan", "(", 
+             RowBox[{"3", " ", "\[Degree]"}], ")"}]}]}], ")"}], "2"]}], "-", 
+       RowBox[{"221.5", " ", 
+        RowBox[{"(", 
+         RowBox[{"221.5", "-", 
+          RowBox[{"2", " ", 
+           RowBox[{"(", 
+            RowBox[{"75", "-", "59", "+", "7"}], ")"}], " ", 
+           RowBox[{"tan", "(", 
+            RowBox[{"3", " ", "\[Degree]"}], ")"}]}]}], ")"}]}], "+", 
+       RowBox[{"2", " ", 
+        SuperscriptBox["221.5", "2"]}]}], ")"}]}]}]}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{{3.684554104436107*^9, 3.684554121335401*^9}, {
+   3.684554186578003*^9, 3.6845543751740456`*^9}, {3.684554419194466*^9, 
+   3.6845545452999783`*^9}, 3.684554595063236*^9, {3.684554632933547*^9, 
+   3.6845546846120863`*^9}, {3.684554724263584*^9, 3.684554741902374*^9}, {
+   3.684554772177605*^9, 3.6845548099758673`*^9}, 3.684554853117699*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"Vo", "=", 
+   RowBox[{"V1", "+", "V2", "+", "V3", "-", 
+    RowBox[{"4", " ", "V4"}], "+", "V5", "+", "V6", "+", "Vkon"}]}], 
+  TraditionalForm]], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{{3.6831835232993727`*^9, 3.6831835317719855`*^9}, {
+   3.6831895295319967`*^9, 3.6831895321317196`*^9}, {3.6833917592913923`*^9, 
+   3.6833917606693068`*^9}, 3.683392493304957*^9, {3.6845531623085485`*^9, 
+   3.6845531969316893`*^9}, {3.6845543492977533`*^9, 3.684554352918172*^9}, {
+   3.684554390704425*^9, 3.68455439274679*^9}, {3.684554860076352*^9, 
+   3.684554864732462*^9}, {3.684554956994122*^9, 3.6845549595138063`*^9}}],
+
+Cell[BoxData["2.8081680886732474`*^7"], "Output",
+ CellChangeTimes->{{3.6845540591148167`*^9, 3.684554070632516*^9}, 
+   3.6845543556700115`*^9, 3.684554395433587*^9, 3.684554555658903*^9, 
+   3.6845548203187795`*^9, {3.6845548625189843`*^9, 3.6845548653878994`*^9}, 
+   3.6845549652236233`*^9}],
+
+Cell["\:041e\:0442\:0441\:044e\:0434\:0430 \:0432\:044b\:0447\:0438\:0441\
+\:043b\:044f\:0435\:043c \:041a\:0418\:041c:", "Text",
+ CellChangeTimes->{{3.6845549307365746`*^9, 3.684554941532789*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"V", "/", "Vo"}]], "Input",
+ CellChangeTimes->{{3.684554989019528*^9, 3.684554995629943*^9}}],
+
+Cell[BoxData["0.904034203023591`"], "Output",
+ CellChangeTimes->{3.6845549979364843`*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{958, 1021},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
+StyleDefinitions->FrontEnd`FileName[{"Article"}, "JournalArticle.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 159, 2, 50, "Section"],
+Cell[742, 26, 401, 5, 23, "Text"],
+Cell[CellGroupData[{
+Cell[1168, 35, 755, 19, 48, "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[1926, 56, 694, 16, 48, "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[2623, 74, 639, 15, 48, "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[3265, 91, 614, 14, 48, "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[3882, 107, 1122, 26, 48, "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[5007, 135, 1170, 33, 48, "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
+}, Open  ]],
+Cell[6192, 171, 3884, 114, 126, "Input"],
+Cell[10079, 287, 694, 12, 30, "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[10776, 301, 295, 4, 31, "Output"],
+Cell[11074, 307, 197, 2, 23, "Text"],
+Cell[CellGroupData[{
+Cell[11296, 313, 116, 2, 29, "Input"],
+Cell[11415, 317, 89, 1, 29, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,194 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6084,        185]
+NotebookOptionsPosition[      5464,        162]
+NotebookOutlinePosition[      5887,        178]
+CellTagsIndexPosition[      5844,        175]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "\:211612.430-432 \:041d\:0430\:0439\:0442\:0438 \:0432\:044b\:0447\:0435\
+\:0442\:044b \:0444\:0443\:043d\:043a\:0446\:0438\:0438\:0439 \:043e\:0442\
+\:043d\:043e\:0441\:0438\:0442\:0435\:043b\:044c\:043d\:043e \:0442\:043e\
+\:0447\:043a\:0438 ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["z", "0"], "=", "\[Infinity]"}], TraditionalForm]]]
+}], "Text",
+ CellChangeTimes->{{3.6691852624544363`*^9, 3.6691852627284517`*^9}, {
+  3.6691856199998865`*^9, 3.66918562268604*^9}, {3.669185776448835*^9, 
+  3.669185778496952*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "(", "z", ")"}], "=", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["z", "4"], "+", "z"}], 
+     RowBox[{
+      SuperscriptBox["z", "6"], "-", "1"}]]}], ",", 
+   RowBox[{"z", " ", 
+    RowBox[{
+     SuperscriptBox["cos", "2"], "(", 
+     FractionBox["\[Pi]", "z"], ")"}]}], ",", 
+   RowBox[{
+    FractionBox[
+     SuperscriptBox["z", "2"], 
+     RowBox[{"z", "-", "1"}]], 
+    RowBox[{"sin", "(", 
+     FractionBox["1", "z"], ")"}]}], " ", ",", " ", 
+   RowBox[{
+    SubscriptBox["z", "0"], "=", "\[Infinity]"}]}], 
+  TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.6691852674027195`*^9, 3.6691852972864285`*^9}, {
+  3.669185627598321*^9, 3.6691856814183993`*^9}, {3.66918582759376*^9, 
+  3.669185827959781*^9}}],
+
+Cell["\<\
+\:0414\:0430\:043d\:043d\:044b\:0435 \:0444\:0443\:043d\:043a\:0446\:0438\
+\:0438 \:043d\:0435 \:043f\:0440\:0435\:0434\:0441\:0442\:0430\:0432\:043b\
+\:044f\:044e\:0442 \:0441\:043b\:043e\:0436\:043d\:043e\:0441\:0442\:0438, \
+\:043f\:043e\:044d\:0442\:043e\:043c\:0443 \:043d\:0430\:0439\:0434\:0435\
+\:043c \:0432\:044b\:0447\:0435\:0442 \:0441\:0440\:0430\:0437\:0443 \:0432\
+\:043e \:0432\:0441\:0435\:0445 \:0444\:0443\:043d\:043a\:0446\:0438\:044f\
+\:0445, \:043f\:0440\:043e\:0441\:0442\:043e\:0439 \:0444\:0443\:043d\:043a\
+\:0446\:0438\:0435\:0439 Residue.\
+\>", "Text",
+ CellChangeTimes->{{3.6691856925410357`*^9, 3.669185731879286*^9}}],
+
+Cell["\:0417\:0430\:0434\:0430\:0434\:0438\:043c \:043c\:043d\:043e\:0436\
+\:0435\:0441\:0442\:0432\:043e \:0444\:0443\:043d\:043a\:0446\:0438\:0439 \
+F:", "Text",
+ CellChangeTimes->{{3.6691856925410357`*^9, 3.6691857456580734`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"F", "[", "z_", "]"}], ":=", 
+  RowBox[{"{", 
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["z", "4"], "+", "z"}], 
+     RowBox[{
+      SuperscriptBox["z", "6"], "-", "1"}]], ",", 
+    RowBox[{"z", " ", 
+     SuperscriptBox[
+      RowBox[{"Cos", "[", 
+       FractionBox["\[Pi]", "z"], "]"}], "2"]}], ",", 
+    RowBox[{
+     FractionBox[
+      SuperscriptBox["z", "2"], 
+      RowBox[{"z", "-", "1"}]], 
+     RowBox[{"Sin", "[", 
+      FractionBox["1", "z"], "]"}]}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.669185746851142*^9, 3.669185846763857*^9}}],
+
+Cell["\:0422\:0435\:043f\:0435\:0440\:044c \:043f\:043e\:0441\:0442\:0440\
+\:043e\:0438\:043c \:0442\:0430\:0431\:043b\:0438\:0446\:0443 \:043e\:0442\
+\:0432\:0435\:0442\:043e\:0432:", "Text",
+ CellChangeTimes->{{3.6691858675530453`*^9, 3.6691858730393596`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<Res(\>\"", ",", 
+      RowBox[{
+       RowBox[{"F", "[", "z", "]"}], "[", 
+       RowBox[{"[", "i", "]"}], "]"}], ",", "\"\<,z->\[Infinity])=\>\"", ",", 
+      RowBox[{"Residue", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"F", "[", "z", "]"}], "[", 
+         RowBox[{"[", "i", "]"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"z", ",", "Infinity"}], "}"}]}], "]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", "3"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.669185859969612*^9, 3.6691858930405035`*^9}, {
+  3.6691861011404057`*^9, 3.6691861556015215`*^9}, {3.6691861894744587`*^9, 
+  3.669186258348398*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Res(\"\>", 
+     FractionBox[
+      RowBox[{"z", "+", 
+       SuperscriptBox["z", "4"]}], 
+      RowBox[{
+       RowBox[{"-", "1"}], "+", 
+       SuperscriptBox["z", "6"]}]], "\<\",z->\[Infinity])=\"\>", "0"},
+    {"\<\"Res(\"\>", 
+     RowBox[{"z", " ", 
+      SuperscriptBox[
+       RowBox[{"Cos", "[", 
+        FractionBox["\[Pi]", "z"], "]"}], "2"]}], "\<\",z->\[Infinity])=\"\>", 
+     SuperscriptBox["\[Pi]", "2"]},
+    {"\<\"Res(\"\>", 
+     FractionBox[
+      RowBox[{
+       SuperscriptBox["z", "2"], " ", 
+       RowBox[{"Sin", "[", 
+        FractionBox["1", "z"], "]"}]}], 
+      RowBox[{
+       RowBox[{"-", "1"}], "+", "z"}]], "\<\",z->\[Infinity])=\"\>", 
+     RowBox[{"-", "1"}]}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{
+  3.6691861558135333`*^9, {3.669186210797678*^9, 3.6691862590184364`*^9}},
+ FontSize->14]
+}, Open  ]]
+},
+WindowSize->{892, 665},
+WindowMargins->{{129, Automatic}, {1, Automatic}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 7, 2015)",
+StyleDefinitions->FrontEnd`FileName[{"Article"}, "JournalArticle.nb", 
+  CharacterEncoding -> "WindowsCyrillic"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 552, 12, 23, "Text"],
+Cell[1113, 34, 788, 25, 52, "Equation"],
+Cell[1904, 61, 658, 10, 23, "Text"],
+Cell[2565, 73, 233, 3, 23, "Text"],
+Cell[2801, 78, 606, 20, 65, "Input"],
+Cell[3410, 100, 262, 3, 23, "Text"],
+Cell[CellGroupData[{
+Cell[3697, 107, 776, 20, 47, "Input"],
+Cell[4476, 129, 972, 30, 107, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

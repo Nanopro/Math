@@ -1,0 +1,204 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6192,        195]
+NotebookOptionsPosition[      5652,        173]
+NotebookOutlinePosition[      5994,        188]
+CellTagsIndexPosition[      5951,        185]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "\:0417\:0430\:0434\:0430\:043d\:0438\:0435 9\n\
+\:0412\:044b\:0447\:0438\:0441\:043b\:0438\:0442\:044c \:0438\:043d\:0442\
+\:0435\:0433\:0440\:0430\:043b \:043f\:0440\:0438 \:043f\:043e\:043c\:043e\
+\:0449\:0438 \:0442\:0435\:043e\:0440\:0435\:043c \:0432\:044b\:0447\:0435\
+\:0442\:043e\:0432.\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ContourIntegral]", 
+    RowBox[{
+     SuperscriptBox["z", "2"], 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", 
+       FractionBox["1", "z"]}]], "dz", " "}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\:0433\:0434\:0435 \:043a\:043e\:043d\:0442\:0443\:0440 ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\:0421", ":", 
+     RowBox[{"|", "z", "|"}]}], "=", "4"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n\:0412\:043e\:0441\:043f\:043e\:043b\:044c\:0437\:0443\:0435\:043c\:0441\
+\:044f \:043f\:0435\:0440\:0432\:043e\:0439 \:0442\:0435\:043e\:0440\:0435\
+\:043c\:043e\:0439 \:043e \:0432\:044b\:0447\:0435\:0442\:0430\:0445:"
+}], "Text",
+ CellChangeTimes->{{3.6688691838985987`*^9, 3.668869200336539*^9}, {
+  3.6688693444287806`*^9, 3.6688694207351446`*^9}, {3.6688695748519597`*^9, 
+  3.6688695863406167`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Integral]", 
+    RowBox[{
+     RowBox[{"f", "(", "z", ")"}], 
+     RowBox[{"\[DifferentialD]", "z"}]}]}], "=", 
+   RowBox[{"2", " ", "\[Pi]", " ", "\[ImaginaryI]", " ", 
+    RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"k", "=", "1"}], "N"], 
+     RowBox[{"res", "(", 
+      RowBox[{
+       RowBox[{"f", "(", "z", ")"}], ",", 
+       SubscriptBox["z", "k"]}], ")"}]}]}]}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.6688695963111873`*^9, 3.6688696719205117`*^9}},
+ FontSize->14],
+
+Cell[TextData[{
+ "\:0412\:043d\:0443\:0442\:0440\:0438 \:043a\:043e\:043d\:0442\:0443\:0440\
+\:0430 \:0421 \:0432\:0441\:0435\:0433\:043e \:043e\:0434\:043d\:0430 \:0441\
+\:0443\:0449\:0435\:0441\:0442\:0432\:0435\:043d\:043d\:043e \:043e\:0441\
+\:043e\:0431\:0430\:044f \:0442\:043e\:0447\:043a\:0430: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"z", "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n\:041d\:0430\:0439\:0434\:0435\:043c \:0432\:044b\:0447\:0435\:0442 \
+\:0432 \:043d\:0435\:0439 \:0440\:0430\:0437\:043b\:043e\:0436\:0438\:0432 \
+\:0444\:0443\:043d\:043a\:0446\:0438\:044e \:0432 \:0440\:044f\:0434:"
+}], "Text",
+ CellChangeTimes->{{3.6688696975929804`*^9, 3.668869738903343*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["z", "2"], 
+    RowBox[{"Exp", "[", 
+     RowBox[{"-", 
+      FractionBox["1", "z"]}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", "Infinity", ",", "3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.668869741052466*^9, 3.668869784857971*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["z", "2"], "-", "z", "+", 
+   FractionBox["1", "2"], "-", 
+   FractionBox["1", 
+    RowBox[{"6", " ", "z"}]], "+", 
+   FractionBox["1", 
+    RowBox[{"24", " ", 
+     SuperscriptBox["z", "2"]}]], "-", 
+   FractionBox["1", 
+    RowBox[{"120", " ", 
+     SuperscriptBox["z", "3"]}]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", "z"], "]"}], "4"],
+    SeriesData[$CellContext`z, 
+     DirectedInfinity[1], {}, -2, 4, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`z, 
+   DirectedInfinity[1], {1, -1, 
+    Rational[1, 2], 
+    Rational[-1, 6], 
+    Rational[1, 24], 
+    Rational[-1, 120]}, -2, 4, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{{3.6688697666579304`*^9, 3.668869785338999*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "\:0412\:044b\:0447\:0435\:0442 \:0431\:0443\:0434\:0435\:0442 \:0440\:0430\
+\:0432\:0435\:043d \:043a\:043e\:044d\:0444\:0435\:0446\:0438\:0435\:043d\
+\:0442\:0443 \:043f\:0435\:0440\:0435\:0434 ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["z", 
+    RowBox[{"-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"res", "=", 
+    FractionBox[
+     RowBox[{"-", "1"}], "6"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n\:041e\:0442\:0441\:044e\:0434\:0430 \:0438\:043d\:0442\:0435\:0433\:0440\
+\:0430\:043b:"
+}], "Text",
+ CellChangeTimes->{{3.668869865712596*^9, 3.668869939543819*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Integral]", 
+    RowBox[{
+     RowBox[{"f", "(", "z", ")"}], 
+     RowBox[{"\[DifferentialD]", "z"}]}]}], "=", 
+   RowBox[{"2", " ", "\[Pi]", " ", "\[ImaginaryI]", " ", "*", 
+    FractionBox[
+     RowBox[{"-", "1"}], "6"]}]}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.66886995652279*^9, 3.668869964023219*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Integral]", 
+    RowBox[{
+     RowBox[{"f", "(", "z", ")"}], 
+     RowBox[{"\[DifferentialD]", "z"}]}]}], "=", " ", 
+   RowBox[{"-", 
+    FractionBox[
+     RowBox[{"\[Pi]", " ", "\[ImaginaryI]"}], "3"], " "}]}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{{3.6688699766919436`*^9, 3.668870005442588*^9}}]
+},
+WindowSize->{759, 835},
+WindowMargins->{{Automatic, 427}, {Automatic, 64}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 7, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1219, 28, 127, "Text"],
+Cell[1780, 50, 547, 16, 62, "Input"],
+Cell[2330, 68, 714, 13, 49, "Text"],
+Cell[CellGroupData[{
+Cell[3069, 85, 337, 10, 62, "Input"],
+Cell[3409, 97, 816, 27, 47, "Output"]
+}, Open  ]],
+Cell[4240, 127, 675, 19, 61, "Text"],
+Cell[4918, 148, 368, 10, 51, "Input"],
+Cell[5289, 160, 359, 11, 50, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)

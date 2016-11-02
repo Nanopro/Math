@@ -1,0 +1,333 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12799,        323]
+NotebookOptionsPosition[     12275,        301]
+NotebookOutlinePosition[     12787,        321]
+CellTagsIndexPosition[     12744,        318]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Row", "@", 
+  RowBox[{"Table", "[", "     ", 
+   RowBox[{
+    RowBox[{"Graphics", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"\"\<\!\(\*SubscriptBox[\(V\), \(B\)]\)\>\"", ",", 
+          RowBox[{
+           RowBox[{
+            SubscriptBox["V", "B"], "[", "x", "]"}], "+", 
+           RowBox[{"0.1", 
+            RowBox[{
+             SubscriptBox["V", "B"], "[", "x", "]"}]}]}]}], "]"}], ",", 
+        RowBox[{"Text", "[", 
+         RowBox[{"\"\<\!\(\*SubscriptBox[\(V\), \(C\)]\)\>\"", ",", 
+          RowBox[{
+           RowBox[{
+            SubscriptBox["V", "C"], "[", "x", "]"}], "+", "0.2"}]}], "]"}], 
+        ",", 
+        RowBox[{"Text", "[", 
+         RowBox[{"\"\<\!\(\*SubscriptBox[\(V\), \(D\)]\)\>\"", ",", 
+          RowBox[{
+           RowBox[{
+            SubscriptBox["V", "D"], "[", "x", "]"}], "+", "0.2"}]}], "]"}], 
+        ",", 
+        RowBox[{"Text", "[", 
+         RowBox[{"\"\<\!\(\*SubscriptBox[\(V\), \(E\)]\)\>\"", ",", 
+          RowBox[{
+           RowBox[{
+            SubscriptBox["V", "E"], "[", "x", "]"}], "+", 
+           RowBox[{"0.1", 
+            RowBox[{
+             SubscriptBox["V", "E"], "[", "x", "]"}]}]}]}], "]"}], ",", 
+        RowBox[{"Text", "[", 
+         RowBox[{"\"\<\!\(\*SubscriptBox[\(V\), \(S2\)]\)\>\"", ",", 
+          RowBox[{
+           RowBox[{
+            SubscriptBox["V", "S2"], "[", "x", "]"}], "+", 
+           RowBox[{"0.1", 
+            RowBox[{
+             SubscriptBox["V", "S2"], "[", "x", "]"}]}]}]}], "]"}], ",", " ", 
+        ",", " ", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Arrow", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0"}], "}"}], ",", "#"}], "}"}], "]"}], "&"}],
+          "/@", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            SubscriptBox["V", "B"], "[", "x", "]"}], ",", 
+           RowBox[{
+            SubscriptBox["V", "C"], "[", "x", "]"}], ",", 
+           RowBox[{
+            SubscriptBox["V", "D"], "[", "x", "]"}], ",", 
+           RowBox[{
+            SubscriptBox["V", "E"], "[", "x", "]"}], ",", 
+           RowBox[{
+            SubscriptBox["V", "S2"], "[", "x", "]"}]}], "}"}]}]}], "}"}], ",", 
+      RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "3"}], ",", "3"}], "}"}]}], "}"}]}], ",", 
+      RowBox[{"ImageSize", "\[Rule]", "250"}], " ", ",", 
+      RowBox[{"PlotLabel", "\[Rule]", "x"}]}], " ", "]"}], "   ", ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Pi", "/", "4"}], ",", 
+        RowBox[{"Pi", "/", "2"}], ",", 
+        RowBox[{"3", 
+         RowBox[{"Pi", "/", "4"}]}], ",", 
+        RowBox[{"5", 
+         RowBox[{"Pi", "/", "4"}]}], ",", 
+        RowBox[{"3", 
+         RowBox[{"Pi", "/", "2"}]}], ",", 
+        RowBox[{"7", 
+         RowBox[{"Pi", "/", "4"}]}]}], "}"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6660298239941177`*^9, 3.666030058556534*^9}, {
+  3.6660301603843575`*^9, 3.6660301636685457`*^9}, {3.6660302589509954`*^9, 
+  3.6660302820563173`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{GraphicsBox[{
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(B\\)]\\)\"", 
+       TraditionalForm], {-1.1667261889578033`, 1.1667261889578033`}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(C\\)]\\)\"", 
+       TraditionalForm], {-1.1179080494935847`, 0.1999999999999994}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(D\\)]\\)\"", 
+       TraditionalForm], {-0.15763650806467638`, 0.1999999999999999}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(E\\)]\\)\"", 
+       TraditionalForm], {-0.16911075425110417`, 0.9247689059553211}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(S2\\)]\\)\"", 
+       TraditionalForm], {-1.3082125217003733`, 0.5833630944789014}], Null, {
+      ArrowBox[{{0, 0}, {-1.0606601717798212`, 1.0606601717798212`}}], 
+      ArrowBox[{{0, 0}, {-1.3179080494935846`, -6.245004513516506*^-16}}], 
+      ArrowBox[{{0, 0}, {-0.3576365080646764, -1.0408340855860843`*^-16}}], 
+      ArrowBox[{{0, 0}, {-0.1537370493191856, 0.8406990054139283}}], 
+      ArrowBox[{{0, 0}, {-1.189284110636703, 0.5303300858899104}}]}}, Axes -> 
+    True, PlotRange -> {{-3, 3}, {-3, 3}}, ImageSize -> 250, PlotLabel -> 
+    FormBox[
+      FractionBox["\[Pi]", "4"], TraditionalForm]],GraphicsBox[{
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(B\\)]\\)\"", 
+       TraditionalForm], {-1.65, 0.}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(C\\)]\\)\"", 
+       TraditionalForm], {-1.2999999999999998`, 0.2000000000000005}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(D\\)]\\)\"", 
+       TraditionalForm], {-1.3000000000000005`, 0.20000000000000007`}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(E\\)]\\)\"", 
+       TraditionalForm], {-1.6500000000000006`, 2.1372883593832886`*^-16}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(S2\\)]\\)\"", 
+       TraditionalForm], {-1.6499999999999997`, 2.7478019859472625`*^-16}], 
+     Null, {
+      ArrowBox[{{0, 0}, {-1.5, 0.}}], 
+      ArrowBox[{{0, 0}, {-1.4999999999999998`, 4.996003610813204*^-16}}], 
+      ArrowBox[{{0, 0}, {-1.5000000000000004`, 6.476631392070566*^-17}}], 
+      ArrowBox[{{0, 0}, {-1.5000000000000004`, 1.9429894176211715`*^-16}}], 
+      ArrowBox[{{0, 0}, {-1.4999999999999998`, 2.498001805406602*^-16}}]}}, 
+    Axes -> True, PlotRange -> {{-3, 3}, {-3, 3}}, ImageSize -> 250, 
+    PlotLabel -> FormBox[
+      FractionBox["\[Pi]", "2"], TraditionalForm]],GraphicsBox[{
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(B\\)]\\)\"", 
+       TraditionalForm], {-1.1667261889578033`, -1.1667261889578033`}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(C\\)]\\)\"", 
+       TraditionalForm], {-0.6034122940660578, 0.19999999999999918`}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(D\\)]\\)\"", 
+       TraditionalForm], {-1.563683835494965, 0.1999999999999999}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(E\\)]\\)\"", 
+       TraditionalForm], {-2.1643416236645012`, -0.9247689059553211}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(S2\\)]\\)\"", 
+       TraditionalForm], {-1.0252398562152336`, -0.5833630944789021}], Null, {
+      ArrowBox[{{0, 0}, {-1.0606601717798212`, -1.0606601717798212`}}], 
+      ArrowBox[{{0, 0}, {-0.8034122940660579, -8.326672684688674*^-16}}], 
+      ArrowBox[{{0, 0}, {-1.7636838354949649`, -1.0408340855860843`*^-16}}], 
+      ArrowBox[{{0, 0}, {-1.9675832942404556`, -0.8406990054139283}}], 
+      ArrowBox[{{0, 0}, {-0.9320362329229396, -0.530330085889911}}]}}, Axes -> 
+    True, PlotRange -> {{-3, 3}, {-3, 3}}, ImageSize -> 250, PlotLabel -> 
+    FormBox[
+      FractionBox[
+       RowBox[{"3", " ", "\[Pi]"}], "4"], TraditionalForm]],GraphicsBox[{
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(B\\)]\\)\"", TraditionalForm], {
+      1.1667261889578033`, -1.1667261889578033`}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(C\\)]\\)\"", TraditionalForm], {
+      1.0034122940660575`, 0.19999999999999918`}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(D\\)]\\)\"", 
+       TraditionalForm], {-0.5016194589919953, 0.19999999999999918`}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(E\\)]\\)\"", 
+       TraditionalForm], {-0.39683457671917344`, -1.5459453765435576`}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(S2\\)]\\)\"", TraditionalForm], {
+      1.0252398562152334`, -0.5833630944789021}], Null, {
+      ArrowBox[{{0, 0}, {1.0606601717798212`, -1.0606601717798212`}}], 
+      ArrowBox[{{0, 0}, {0.8034122940660574, -8.326672684688674*^-16}}], 
+      ArrowBox[{{0, 0}, {-0.7016194589919953, -8.326672684688674*^-16}}], 
+      ArrowBox[{{0, 0}, {-0.3607587061083395, -1.4054048877668706`}}], 
+      ArrowBox[{{0, 0}, {0.9320362329229394, -0.530330085889911}}]}}, Axes -> 
+    True, PlotRange -> {{-3, 3}, {-3, 3}}, ImageSize -> 250, PlotLabel -> 
+    FormBox[
+      FractionBox[
+       RowBox[{"5", " ", "\[Pi]"}], "4"], TraditionalForm]],GraphicsBox[{
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(B\\)]\\)\"", TraditionalForm], {
+      1.65, 0.}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(C\\)]\\)\"", TraditionalForm], {
+      1.6999999999999997`, 0.2000000000000005}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(D\\)]\\)\"", TraditionalForm], {
+      1.6999999999999993`, 0.1999999999999999}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(E\\)]\\)\"", TraditionalForm], {
+      1.6499999999999992`, -4.08027777700446*^-16}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(S2\\)]\\)\"", TraditionalForm], {
+      1.6499999999999997`, 2.7478019859472625`*^-16}], Null, {
+      ArrowBox[{{0, 0}, {1.5, 0.}}], 
+      ArrowBox[{{0, 0}, {1.4999999999999998`, 4.996003610813204*^-16}}], 
+      ArrowBox[{{0, 0}, {1.4999999999999993`, -1.2364478112134736`*^-16}}], 
+      ArrowBox[{{0, 0}, {1.4999999999999993`, -3.709343433640418*^-16}}], 
+      ArrowBox[{{0, 0}, {1.4999999999999998`, 2.498001805406602*^-16}}]}}, 
+    Axes -> True, PlotRange -> {{-3, 3}, {-3, 3}}, ImageSize -> 250, 
+    PlotLabel -> FormBox[
+      FractionBox[
+       RowBox[{"3", " ", "\[Pi]"}], "2"], TraditionalForm]],GraphicsBox[{
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(B\\)]\\)\"", TraditionalForm], {
+      1.1667261889578033`, 1.1667261889578033`}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(C\\)]\\)\"", TraditionalForm], {
+      1.517908049493585, 0.1999999999999998}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(D\\)]\\)\"", TraditionalForm], {
+      3.0229398025516394`, 0.20000000000000062`}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(E\\)]\\)\"", TraditionalForm], {
+      2.7302869546347814`, 1.5459453765435576`}], 
+     InsetBox[
+      FormBox[
+      "\"\\!\\(\\*SubscriptBox[\\(V\\), \\(S2\\)]\\)\"", TraditionalForm], {
+      1.3082125217003737`, 0.5833630944789016}], Null, {
+      ArrowBox[{{0, 0}, {1.0606601717798212`, 1.0606601717798212`}}], 
+      ArrowBox[{{0, 0}, {1.317908049493585, -2.0816681711721685`*^-16}}], 
+      ArrowBox[{{0, 0}, {2.8229398025516392`, 6.245004513516506*^-16}}], 
+      ArrowBox[{{0, 0}, {2.482079049667983, 1.4054048877668706`}}], 
+      ArrowBox[{{0, 0}, {1.1892841106367034`, 0.5303300858899105}}]}}, Axes -> 
+    True, PlotRange -> {{-3, 3}, {-3, 3}}, ImageSize -> 250, PlotLabel -> 
+    FormBox[
+      FractionBox[
+       RowBox[{"7", " ", "\[Pi]"}], "4"], TraditionalForm]]},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.6660299158003683`*^9, 3.666029949618303*^9}, {
+   3.66602999992318*^9, 3.666030059102565*^9}, 3.6660301645875983`*^9, {
+   3.6660302598580475`*^9, 3.666030282510343*^9}}]
+}, Open  ]],
+
+Cell[BoxData["0"], "Input",
+ CellChangeTimes->{3.6660302660974045`*^9}]
+},
+WindowSize->{1279, 913},
+WindowMargins->{{300, Automatic}, {-82, Automatic}},
+PrintingCopies->1,
+PrintingPageRange->{32000, 32000},
+PrintingOptions->{"Magnification"->1.,
+"PaperOrientation"->"Portrait",
+"PaperSize"->{595.1999999999999, 841.98}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 7, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3383, 93, 162, "Input"],
+Cell[3966, 117, 8219, 178, 625, "Output"]
+}, Open  ]],
+Cell[12200, 298, 71, 1, 31, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -1,0 +1,303 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9636,        295]
+NotebookOptionsPosition[      8768,        264]
+NotebookOutlinePosition[      9188,        280]
+CellTagsIndexPosition[      9145,        277]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"findOriginalR", "[", 
+    RowBox[{"p_", ",", "F_", ",", "t_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "sol", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"sol", "=", 
+       RowBox[{"p", "/.", 
+        RowBox[{"Solve", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Denominator", "[", "F", "]"}], "\[Equal]", "0"}], ",", 
+          "p"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"sol", "\[NotEqual]", " ", 
+         RowBox[{"{", "}"}]}], ",", 
+        RowBox[{"FullSimplify", "@", 
+         RowBox[{"Sum", "[", 
+          RowBox[{
+           RowBox[{"Residue", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Exp", "[", 
+               RowBox[{"p", " ", "t"}], "]"}], "F"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"p", ",", 
+               RowBox[{"sol", "[", 
+                RowBox[{"[", "i", "]"}], "]"}]}], "}"}]}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"i", ",", "1", ",", 
+             RowBox[{"Length", "[", "sol", "]"}]}], "}"}]}], "]"}]}]}], 
+       "]"}]}]}], "]"}]}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.67306443359249*^9, 3.6730644724937887`*^9}, {
+   3.673064857996505*^9, 3.6730648882636127`*^9}, {3.6730649436090107`*^9, 
+   3.673065006602069*^9}, 3.673066228853013*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"findOriginalS", "[", 
+   RowBox[{"p_", ",", "F_", ",", "t_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "}"}], ",", 
+    RowBox[{"TraditionalForm", "@", 
+     RowBox[{"Inactivate", "[", 
+      RowBox[{
+       RowBox[{"Sum", "[", 
+        RowBox[{
+         RowBox[{"Refine", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"SeriesCoefficient", "[", 
+             RowBox[{"F", ",", 
+              RowBox[{"{", 
+               RowBox[{"p", ",", "Infinity", ",", 
+                RowBox[{"k", "+", "1"}]}], "}"}]}], "]"}], "*", 
+            RowBox[{
+             SuperscriptBox["t", "k"], "/", 
+             RowBox[{
+              RowBox[{"(", "k", ")"}], "!"}]}]}], ",", 
+           RowBox[{"k", "\[GreaterEqual]", " ", "8"}]}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", "0", ",", "Infinity"}], "}"}]}], "]"}], ",", 
+       "Sum"}], "]"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.673066166288306*^9, 3.6730661672069488`*^9}, {
+  3.6730662128039465`*^9, 3.673066283703935*^9}, {3.673066356575588*^9, 
+  3.6730664215262628`*^9}, {3.6730665190598345`*^9, 3.6730665647786713`*^9}, {
+  3.6730667872614946`*^9, 3.673066808169022*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"findOriginal", "[", 
+   RowBox[{"p_", ",", "F_", ",", "t_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "}"}], ",", 
+    RowBox[{"TraditionalForm", "@", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       RowBox[{"Refine", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"SeriesCoefficient", "[", 
+           RowBox[{"F", ",", 
+            RowBox[{"{", 
+             RowBox[{"p", ",", "Infinity", ",", 
+              RowBox[{"k", "+", "1"}]}], "}"}]}], "]"}], "*", 
+          RowBox[{
+           SuperscriptBox["t", "k"], "/", 
+           RowBox[{
+            RowBox[{"(", "k", ")"}], "!"}]}]}], ",", 
+         RowBox[{"k", "\[GreaterEqual]", " ", "8"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "0", ",", "Infinity"}], "}"}]}], "]"}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.673066166288306*^9, 3.6730661672069488`*^9}, {
+  3.6730662128039465`*^9, 3.673066283703935*^9}, {3.673066356575588*^9, 
+  3.6730664215262628`*^9}, {3.6730665190598345`*^9, 3.6730665647786713`*^9}, {
+  3.6730667872614946`*^9, 3.673066808169022*^9}, {3.673067110843113*^9, 
+  3.67306712399374*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Sin", "[", 
+   RowBox[{"1", "/", "p"}], "]"}], "==", 
+  RowBox[{"findOriginalS", "[", 
+   RowBox[{"p", ",", 
+    RowBox[{"Sin", "[", 
+     RowBox[{"1", "/", "p"}], "]"}], ",", "t"}], "]"}], "==", 
+  RowBox[{"findOriginal", "[", 
+   RowBox[{"p", ",", " ", 
+    RowBox[{"Sin", "[", 
+     RowBox[{"1", "/", "p"}], "]"}], ",", "t"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.673066261591194*^9, 3.67306627751619*^9}, {
+  3.6730665417304616`*^9, 3.6730665476372414`*^9}, {3.673066640215819*^9, 
+  3.6730666689995427`*^9}, {3.6730668715749044`*^9, 3.673066875591643*^9}, {
+  3.673066994607041*^9, 3.673066995966354*^9}, {3.6730671279352336`*^9, 
+  3.673067129138767*^9}, {3.6730671978450165`*^9, 3.6730672035335417`*^9}, {
+  3.673067259224843*^9, 3.67306726650204*^9}, {3.673067481607212*^9, 
+  3.673067498419129*^9}, {3.673067564295889*^9, 3.673067569311977*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Sin", "[", 
+   FractionBox["1", "p"], "]"}], "\[Equal]", 
+  RowBox[{
+   TagBox[
+    FormBox[
+     TemplateBox[{FractionBox[
+        RowBox[{"\[ImaginaryI]", " ", 
+          SuperscriptBox["\[ImaginaryI]", 
+           RowBox[{"k", "+", "1"}]], " ", 
+          RowBox[{"(", 
+            RowBox[{
+              SuperscriptBox[
+               RowBox[{"(", 
+                 RowBox[{"-", "1"}], ")"}], 
+               RowBox[{"k", "+", "1"}]], "-", 
+              RowBox[{"1"}]}], ")"}], " ", 
+          SuperscriptBox["t", "k"]}], 
+        RowBox[{"2", " ", 
+          RowBox[{"k", "!"}], " ", 
+          RowBox[{
+            RowBox[{"(", 
+              RowBox[{"k", "+", "1"}], ")"}], "!"}]}]],"k","0","\[Infinity]"},
+      "InactiveSum",
+      DisplayFunction->(RowBox[{
+         UnderoverscriptBox[
+          StyleBox["\[Sum]", "InactiveTraditional"], 
+          RowBox[{#2, "=", #3}], #4], #}]& ),
+      InterpretationFunction->(RowBox[{
+         RowBox[{"Inactive", "[", "Sum", "]"}], "[", 
+         RowBox[{#, ",", 
+           RowBox[{"{", 
+             RowBox[{#2, ",", #3, ",", #4}], "}"}]}], "]"}]& ),
+      SyntaxForm->"\[Sum]"],
+     TraditionalForm],
+    TraditionalForm,
+    Editable->True], 
+   RowBox[{"\[Equal]", 
+    TagBox[
+     FormBox[
+      FractionBox[
+       RowBox[{
+        TemplateBox[{"1",RowBox[{"2", " ", 
+            SqrtBox["t"]}]},
+         "KelvinBei2"], "-", 
+        TemplateBox[{"1",RowBox[{"2", " ", 
+            SqrtBox["t"]}]},
+         "KelvinBer2"]}], 
+       RowBox[{
+        SqrtBox["2"], " ", 
+        SqrtBox["t"]}]],
+      TraditionalForm],
+     TraditionalForm,
+     Editable->True]}]}]}]], "Output",
+ CellChangeTimes->{{3.6730675546699142`*^9, 3.6730675700307703`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"findOriginalS", "[", 
+  RowBox[{"p", ",", 
+   RowBox[{"Sin", "[", 
+    RowBox[{"1", "/", "p"}], "]"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6730675110156794`*^9, 3.6730675333489304`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  FractionBox[
+   RowBox[{
+    TemplateBox[{"1",RowBox[{"2", " ", 
+        SqrtBox["t"]}]},
+     "KelvinBei2"], "-", 
+    TemplateBox[{"1",RowBox[{"2", " ", 
+        SqrtBox["t"]}]},
+     "KelvinBer2"]}], 
+   RowBox[{
+    SqrtBox["2"], " ", 
+    SqrtBox["t"]}]], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.673067511734473*^9, 3.6730675338489723`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6730675361929345`*^9, 3.6730675475597277`*^9}}],
+
+Cell[BoxData[
+ FormBox["", TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.673067359465654*^9, 3.6730673647197495`*^9}}],
+
+Cell[BoxData[
+ FormBox["", TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.673067090243862*^9, 3.673067100262952*^9}, {
+  3.6730673770755153`*^9, 3.673067385607294*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"InverseLaplaceTransform", "[", 
+  RowBox[{
+   RowBox[{"Exp", "[", 
+    RowBox[{"1", "/", "p"}], "]"}], ",", "p", ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6730670073981233`*^9, 3.6730670585308104`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{"BesselI", "[", 
+    RowBox[{"1", ",", 
+     RowBox[{"2", " ", 
+      SqrtBox["t"]}]}], "]"}], 
+   SqrtBox["t"]], "+", 
+  RowBox[{"DiracDelta", "[", "t", "]"}]}]], "Output",
+ CellChangeTimes->{{3.6730670460760827`*^9, 3.6730670600649304`*^9}}]
+}, Open  ]]
+},
+WindowSize->{1265, 709},
+WindowMargins->{{11, Automatic}, {Automatic, 143}},
+FrontEndVersion->"10.4 for Microsoft Windows (64-bit) (February 25, 2016)",
+StyleDefinitions->FrontEnd`FileName[{"Article"}, "JournalArticle.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1440, 38, 143, "Input"],
+Cell[2001, 60, 1232, 31, 48, "Input"],
+Cell[3236, 93, 1172, 30, 48, "Input"],
+Cell[CellGroupData[{
+Cell[4433, 127, 893, 18, 47, "Input"],
+Cell[5329, 147, 1748, 55, 60, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7114, 207, 225, 5, 47, InheritFromParent],
+Cell[7342, 214, 383, 13, 73, "Output"]
+}, Open  ]],
+Cell[7740, 230, 143, 2, 47, "Input"],
+Cell[7886, 234, 133, 2, 29, "EquationNumbered"],
+Cell[8022, 238, 174, 3, 29, "Equation"],
+Cell[CellGroupData[{
+Cell[8221, 245, 235, 5, 47, "Input"],
+Cell[8459, 252, 293, 9, 58, "Output"]
+}, Open  ]]
+}
+]
+*)
+
